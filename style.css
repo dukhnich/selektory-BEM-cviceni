@@ -86,7 +86,7 @@ img {
 }
 
 /* První písmeno podpisu větší */
-.popis-uživatele {
+.popis-uzivatele {
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
@@ -120,7 +120,7 @@ a {
 
 /* Tlačítka */
 
-.tlačitko {
+.tlacitko {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
