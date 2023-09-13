@@ -175,4 +175,12 @@ a:hover::after {
 
 /* Po najetí na tlačítko černý border */
 
+.user__button:hover {
+  border-color: black;
+}
+
 /* Při kliknutí se tlačítko zmenší o pixel */
+
+.user__button:active {
+  transform: scale(0.99);
+}
