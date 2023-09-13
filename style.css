@@ -31,7 +31,7 @@ img {
 }
 
 /* Kartička uživatele */
-.karta {
+.user {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,26 +43,30 @@ img {
 }
 
 /* Status uživatele */
-.cena {
+.user__price {
   background-color: rgb(204, 204, 204);
   border-radius: 40px;
   padding: 0.5rem;
 }
-
-.dostupny {
+.user__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user__aviability {
   border-radius: 40px;
   padding: 0.5rem;
+}
+.user__aviability--enable {
   background-color: rgb(105, 228, 126);
 }
 
-.nedostupny {
-  border-radius: 40px;
-  padding: 0.5rem;
+.user__aviability--disable {
   background-color: rgb(255, 123, 97);
 }
 
 /* Nastavení avatara */
-.kulata-fotka {
+.user__avatar {
   border-radius: 50%;
   overflow: hidden;
   width: 100px;
@@ -76,24 +80,24 @@ img {
 }
 
 /* Uživatelský text */
-.text {
+.user__info {
   margin-bottom: 10px;
 }
 
-.nadpis {
+.user__title {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
 /* První písmeno podpisu větší */
-.popis-uzivatele {
+.user__description {
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
 }
 
 /* Udělat seznam se srdíčky místo odrážek */
-.konicky {
+.user__hobby {
   padding: 0;
 }
 
@@ -105,11 +109,12 @@ a {
   color: #007bff;
 }
 
-.navstiveny {
+a:hover {
   color: #0065d1;
 }
 
-.podtrzeni-tlacitka {
+.user__button:before {
+  content: '';
   width: 100%;
   height: 5px;
   background: linear-gradient(270deg, #e1466a 0%, rgba(131,217,255,1) 82%, rgba(131,206,255,1) 100%);
@@ -120,7 +125,7 @@ a {
 
 /* Tlačítka */
 
-.tlacitko {
+.user__button {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -130,17 +135,17 @@ a {
 
 /* Barvy podle platformy*/
 
-.twitter {
+.user__button.user__button--twitter {
   background-color: rgb(29, 155, 240);
   border: 3px solid rgb(29, 155, 240);
 }
 
-.facebook {
+.user__button.user__button--facebook {
   background-color: #3b5998;
   border: 3px solid #3b5998;
 }
 
-.instagram {
+.user__button.user__button--instagram {
   background-color: #E1466A;
   border: 3px solid #E1466A;
 }
